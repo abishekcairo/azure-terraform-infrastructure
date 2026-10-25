@@ -39,7 +39,7 @@ module "compute" {
   location            = module.networking.location
   resource_group_name = module.networking.resource_group_name
   subnet_id           = module.networking.subnet_ids["app"]
-  vm_sku              = "Standard_B2s"
+  vm_sku              = "Standard_B2als_v2"
   instance_count      = 1
   ssh_public_key      = var.ssh_public_key
   tags                = local.tags
