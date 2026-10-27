@@ -4,6 +4,7 @@ locals {
     environment = var.environment
     owner       = "abishek"
     managed_by  = "terraform"
+    cost_center = "learning"
   }
 }
 
