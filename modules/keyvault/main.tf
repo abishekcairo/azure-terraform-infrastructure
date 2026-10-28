@@ -18,9 +18,13 @@ resource "azurerm_key_vault" "this" {
   tags                       = var.tags
 }
 
-# Allow the identity running Terraform (you, or the pipeline) to write secrets
+# Allow the identity running Terraform (you, or the pipeline) to write secrets# Allow the identity running Terraform (you, or the pipeline) to write secrets
 resource "azurerm_role_assignment" "deployer" {
   scope                = azurerm_key_vault.this.id
   role_definition_name = "Key Vault Secrets Officer"
   principal_id         = data.azurerm_client_config.current.object_id
+
+  lifecycle {
+    ignore_changes = [principal_id]
+  }
 }
