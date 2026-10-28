@@ -8,7 +8,8 @@ Internet -> Load Balancer -> VM Scale Set (private subnet) -> PostgreSQL (privat
 Key Vault stores the database password. Log Analytics and alerts monitor the system.
 Terraform state is stored remotely in Azure Storage with locking.
 
-(Add your architecture picture here: ![Architecture](docs/architecture.png))
+(Add your architecture picture here: ![Architecture](<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/d5c9885f-38c2-4c33-b2c9-bed1bb8f287e" />
+))
 
 ## Tech stack
 Azure, Terraform, GitHub Actions (OIDC), Key Vault, Log Analytics, Checkov
