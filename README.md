@@ -8,9 +8,8 @@ Internet -> Load Balancer -> VM Scale Set (private subnet) -> PostgreSQL (privat
 Key Vault stores the database password. Log Analytics and alerts monitor the system.
 Terraform state is stored remotely in Azure Storage with locking.
 
-(Add your architecture picture here: ![Architecture](<img width="2600" height="2400" alt="architecture" src="https://github.com/user-attachments/assets/ed39d624-e5dc-4187-bcbf-762f650e196f" />
+<img width="2600" height="2400" alt="architecture" src="https://github.com/user-attachments/assets/ed39d624-e5dc-4187-bcbf-762f650e196f" />
 
-)
 
 ## Tech stack
 Azure, Terraform, GitHub Actions (OIDC), Key Vault, Log Analytics, Checkov
@@ -44,7 +43,7 @@ Merge to main: terraform apply for dev. Prod needs a manual approval gate.
 - State is stored in a private, versioned storage account.
 
 ## Results
-(Add screenshots: website, portal resources, Key Vault, database networking, drift demo)<img width="1535" height="812" alt="Screenshot 2026-10-24 190607" src="https://github.com/user-attachments/assets/161ec8e9-be0f-4d6e-b065-5182a96f805d" />
+<img width="1535" height="812" alt="Screenshot 2026-10-24 190607" src="https://github.com/user-attachments/assets/161ec8e9-be0f-4d6e-b065-5182a96f805d" />
 <img width="1535" height="773" alt="Screenshot 2026-10-25 182611" src="https://github.com/user-attachments/assets/98db8aff-7cc9-4b5a-8149-26c8157402c1" />
 <img width="1527" height="690" alt="Screenshot 2026-10-25 183552" src="https://github.com/user-attachments/assets/c6f843c6-3190-4250-bcfb-c7e0a027ff3d" />
 <img width="1535" height="690" alt="Screenshot 2026-10-25 183632" src="https://github.com/user-attachments/assets/27be498c-5c6e-43d2-ad01-4968a6dfc0d6" />
